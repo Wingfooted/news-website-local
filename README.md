@@ -8,9 +8,9 @@ To run this program you have to have Git, acsess to a terminal and python instal
 
 In your Terminal run the following 4 commands. 
 ````  
-$ git clone https://github.com/Wingfooted/news-website-local #clones the repository
-$ source ENV/bin/activate #clones the repository
-$ pip3 install requirements.txt #clones the repository
+$ git clone https://github.com/Wingfooted/news-website-local 
+$ source ENV/bin/activate 
+$ pip3 install requirements.txt 
 $ python3 main.py
 ````
 
