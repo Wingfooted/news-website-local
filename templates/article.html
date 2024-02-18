@@ -1,0 +1,71 @@
+<!-- home.html -->
+{% extends "base.html" %}
+
+{% block title %}L'Anthropologie{% endblock %}
+
+{% block content %}
+    <section id="centerpiece">
+        <div class="hs">
+            <div class="thumbnail-wrapper">
+                <img class="thumbnail" src="/static/images/{{hash}}.png" alt="">
+            </div>
+
+            <div class="text-wrapper">
+                <div id="title">{{metadata[2]}}</div>
+                <p>.</p>
+                <div class="hs">
+                    <div class="c-category"><a href="/c/{{metadata[1]}}">{{metadata[1]}}</a></div>
+                    <div class="c-author"><a href="/author/{{metadata[3]}}">{{metadata[3]}}</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="summary-wrapper">
+            {{metadata[0]}}
+        </div>
+
+        <!--meta.write(summary + '\n')
+            meta.write(category + '\n')
+            meta.write(title + '\n')
+            meta.write(author)-->
+    
+    </section>
+
+    <div id="article-split" class="hs">
+        <section class="content">
+            {% for item in content %}
+                {% if item[0] == 't' %}
+                    <p class="text">{{ item[1] }}</p>
+                {% elif item[0] == 's' %}
+                    <p class="subheading">{{ item[1] }}</p>
+                {% elif item[0] == 'q' %}
+                    <p class="quote">"{{ item[1] }}"</p>
+                {% elif item[0] == 'i' %}
+                    <div class="img-wrapper">
+                        <img class="image" src="{{ item[1] }}" alt="Image">
+                    </div>
+                {% endif %}
+            {% endfor %}
+        </section>
+        <aside>
+            <hr>
+            <div id="a-author">
+                <a href="/author/{{metadata[3]}}">{{metadata[3]}}</a>
+            </div>
+            <div id="a-blurb">{{metadata[4]}}</div>
+            <br>
+            <div class="hermes-nws">
+                <form action="post">
+                    <div class="h-logo">HERMES</div>
+                    <div class="h-desc">Subscribe to the Hermes newsletter to hear about our latest publications</div>
+                    <input type="text" placeholder="LoremIpsum@gmail.com">
+                </form>
+            </div>
+        </aside>
+    </div>
+    <div class="spacer"></div>
+    
+{% endblock %}
+
+
+
+

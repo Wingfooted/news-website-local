@@ -1,0 +1,96 @@
+{% extends "base.html" %}
+
+{% block title %}L'Anthropologie{% endblock %}
+
+{% block content %}
+
+<div id="dynamic-main-content">
+    
+    <div class="m-hs">
+        <div class="m-vs" id="Latest">
+            <hr>
+            <div class="column-name">Latest</div>
+            <hr>
+            {%for item in latest%}
+                <div class="c">
+                    <div class="c-t">
+                        <a href="/a/{{item.title}}">{{item.title}}</a>
+                    </div>
+                    <div class="c-a">
+                        <a href="/author/{{item.author}}">{{item.author}}</a>
+                    </div>
+                    <div class="c-c" style="color: {{item.color}}">
+                        <a href="/c/{{item.category}}">{{item.category}}</a>
+                    </div>
+                </div>
+                <hr>
+            {%endfor%}
+        </div>
+        <div class="m-vs" id="Middle">
+            <div id="large-article" class="hs">
+                <div class="thumbnail-wrapper">
+                    <a href="/a/{{large.title}}">
+                        <img src="/static/images/{{large.hash}}.png" alt="">
+                    </a>
+                    <div id="large-summary">
+                        <a href="/a/{{large.title}}">{{large.summary}}</a></div>
+                </div>
+                <div class="text-wrapper">
+                    <div id="large-title">
+                        <a href="/a/{{large.title}}">{{large.title}}</a>
+                    </div>
+                    <div><a style="color: {{large.color}}" href="/c/{{large.category}}">  {{large.category}}</a> - <a href="/author/{{large.author}}">{{large.author}}</a></div>
+                </div>
+            </div>
+            <hr>
+            <div class="m-hs" id="carousel">
+                {%for item in carousel%}
+                    <div class="car-article-frame">
+                        <div class="img-wrapper">
+                            <a href="/a/{{item.title}}">
+                                <img src="/static/images/{{item.hash}}.png" alt="">
+                            </a>
+                        </div>
+                        <div class="category-author">
+                            <a href="/c/{{item.category}}" style="color: {{item.color}}">{{item.category}}</a> - <a href="/author/{{item.author}}">{{item.author}}</a>
+                        </div>
+                        <div class="c-author">
+                            <a href="/a/{{item.title}}">{{item.title}}</a>
+                        </div>
+
+                    </div>
+                {%endfor%}
+            </div>
+        </div>
+        <div class="m-vs" id="Featured">
+            <hr>
+            <div class="column-name">Featured</div>
+            <hr>
+            {%for item in feature%}
+                <div class="c">
+                    <div class="c-t">
+                        <a href="/a/{{item.title}}">{{item.title}}</a>
+                    </div>
+                    <div class="c-a">
+                        <a href="/author/{{item.author}}">{{item.author}}</a>
+                    </div>
+                    <div class="c-c" style="color: {{item.color}}">
+                        <a href="/c/{{item.category}}">{{item.category}}</a>
+                    </div>
+                </div>
+                <hr>
+            {%endfor%}
+        </div>
+    </div>
+    <hr>
+
+    <div id="Agriculture" class="row"></div>
+    <div id="Analysis" class="row"></div>
+    <div id="Foreign Policy" class="row"></div>
+    <div id="Literature" class="row"></div>
+    <div id="Opinion" class="row"></div>
+</div>
+<script>
+    
+</script>
+{% endblock %}
