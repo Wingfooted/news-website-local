@@ -1,0 +1,4 @@
+('t', 'On a rainy night in London, a young woman walks towards the entrance of a sidestreet, smiling to herself as she recalls the evening spent with the friend she just farewelled at the train station. She’s about to walk down the poorly-lit shortcut that will take her back to her accommodation, when she stops.')
+('t', 'Something in her body tells her not to go down that street. She pauses, then turns back towards the busy, well lit but longer route home.')
+('t', '“Where are you going?” She hadn’t heard the footsteps of the man who had been walking behind her. He seems thrown by her change of direction. Instincts screaming, she doesn’t answer and hurries away along the main road.')
+('t', 'Everyone has a story like this – the road they didn’t walk down, the cafe they didn’t go into, the time their body reacted to save them a split second before something bad happened. There are many terms for it; a sixth sense, a gut feeling, something in the air.')

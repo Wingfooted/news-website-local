@@ -1,0 +1,5 @@
+('t', 'Untouched and unspoilt, the natural beauty of Western Australia offers travellers an opportunity to connect with the land and themselves. And the state’s diverse events calendar provides great reasons to visit all year round. From cultural to culinary, whatever your taste or interest, there’s something for every traveller.')
+('t', 'These events don’t just celebrate local and international talent. They’re also celebrations of the destinations themselves. From festivals in otherworldly Instagram-ready locations to profound experiences with traditional custodians, these events offer visitors a chance to experience and enjoy the real Western Australia.')
+('t', 'Here are four reasons to start planning your next Western Australian getaway.')
+('s', 'The Ord Valley Muster')
+('i', '/static/articleimages/02e30e9f_1.png')

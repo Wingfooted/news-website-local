@@ -75,6 +75,7 @@ def index():
 def article(article):
     #rendering the article
     article_hash = hash_string(article)
+    print(article_hash)
     files = os.listdir('static/articles')
     if f"{article_hash}.txt" in files:
         #try:
