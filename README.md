@@ -8,9 +8,14 @@ To run this program you have to have Git, acsess to a terminal and python instal
 
 In your Terminal run the following 4 commands. 
 ````  
-$ git clone https://github.com/Wingfooted/news-website-local 
-$ source ENV/bin/activate 
-$ pip3 install requirements.txt 
+$ git clone https://github.com/Wingfooted/news-website-local
+
+$ cd news-website-local
+
+$ source ENV/bin/activate
+
+$ pip3 install requirements.txt
+
 $ python3 main.py
 ````
 
