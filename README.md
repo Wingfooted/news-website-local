@@ -6,15 +6,24 @@ This is a local visual demo of the project, with prewritten articles that should
 # Running the Program
 To run this program you have to have Git, acsess to a terminal and python installed. Follow the following instructions to view this project. 
 
-In your Terminal run the following 4 commands. 
+In your Terminal run the following commands in order. 
 ````  
 $ git clone https://github.com/Wingfooted/news-website-local
 
 $ cd news-website-local
+````
 
+Optionally, create virtual enviroment so that the dependancies do not interfere with other projects. 
+
+````
+$ virtualenv ENV
 $ source ENV/bin/activate
+````
 
-$ pip3 install requirements.txt
+Running the project:
+
+````
+$ pip3 install -r requirements.txt
 
 $ python3 main.py
 ````
